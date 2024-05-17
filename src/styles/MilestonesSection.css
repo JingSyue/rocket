@@ -1,0 +1,54 @@
+/* MilestonesSection.css */
+.milestones-section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background: #1cb5e0;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  
+  .milestone {
+    background: #333;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .milestone:hover {
+    transform: scale(1.05);
+  }
+  
+  .milestone-content h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .milestone-content p {
+    font-size: 1em;
+  }
+  
+  @media (max-width: 768px) {
+    .milestone {
+      width: 90%;
+    }
+  
+    .milestone-content h3 {
+      font-size: 1.5em;
+    }
+  
+    .milestone-content p {
+      font-size: 0.9em;
+    }
+  }
+  

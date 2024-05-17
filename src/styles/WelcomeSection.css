@@ -1,0 +1,46 @@
+/* WelcomeSection.css */
+.welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #000046, #1cb5e0);
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    position: relative;
+  }
+  
+  .welcome-text {
+    animation: fadeIn 2s forwards;
+  }
+  
+  .welcome-content {
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  .welcome-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: slideIn 2s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
