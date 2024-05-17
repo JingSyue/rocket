@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { useSpring, animated } from '@react-spring/web';
-import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import WelcomeSection from './components/WelcomeSection';
 import AboutUsSection from './components/AboutUsSection';
@@ -20,10 +18,9 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar title="Home" />
       <div className="container">
         <WelcomeSection scrollY={scrollY} />
-        <AboutUsSection />
+        <AboutUsSection scrollY={scrollY} />
         <MilestonesSection scrollY={scrollY} />
       </div>
       <Footer />
